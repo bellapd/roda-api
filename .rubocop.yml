@@ -1,0 +1,5 @@
+# .rubocop.yml
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - 'app/controllers/*'
