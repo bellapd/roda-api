@@ -1,1 +1,15 @@
--
+---
+- id: 1
+  name: "John Doe's Place"
+  checkins:
+    - lat: "40.7128"
+      lng: "-74.0060"
+    - lat: "40.7127"
+      lng: "-74.0059"
+- id: 2
+  name: "Jane Doe's Place"
+  checkins:
+    - lat: "34.0522"
+      lng: "-118.2437"
+    - lat: "34.0521"
+      lng: "-118.2436"

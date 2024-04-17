@@ -4,4 +4,4 @@
 
 require_relative 'app/app'
 
-run App.freeze.app
+run Navitogether::App.freeze.app

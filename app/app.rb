@@ -1,17 +1,22 @@
 # frozen_string_literal: true
 
 require 'roda'
-require 'json'
 require_relative 'controllers/locations_controllers'
+# Main application class for the Navitogether API
+module Navitogether
+  class App < Roda
+    plugin :json
+    plugin :all_verbs
 
-# class for the app
-class App < Roda
-  plugin :json # This plugin allows us to return JSON responses
-  plugin :all_verbs # This plugin allows us to use all HTTP verbs
+    route do |r|
+      r.on 'locations' do
+        r.run Navitogether::LocationsController
+      end
 
-  route do |r|
-    r.on 'locations' do
-      r.run LocationsController
+      # Define a root route that returns a basic JSON message
+      r.root do
+        { message: 'Navitogether API is up and running!' }
+      end
     end
   end
 end

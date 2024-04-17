@@ -1,31 +1,21 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    bigdecimal (3.1.7)
     nio4r (2.7.1)
     puma (6.4.2)
       nio4r (~> 2.0)
     rack (3.0.10)
     roda (3.79.0)
       rack
-    sequel (5.79.0)
-      bigdecimal
-    yaml (0.3.0)
 
 PLATFORMS
-  aarch64-linux
-  arm-linux
-  arm64-darwin
-  x86-linux
-  x86_64-darwin
-  x86_64-linux
+  arm64-darwin-23
+  ruby
 
 DEPENDENCIES
   puma
   rack
   roda
-  sequel
-  yaml
 
 BUNDLED WITH
    2.5.3
